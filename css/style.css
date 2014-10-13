@@ -1,0 +1,213 @@
+/* -----------------------------------------
+   Global resets
+----------------------------------------- */
+body {
+	font-family: Lato, Arial, sans-serif;
+	font-size: .91428571428571em;
+	font-weight: 500;
+	font-style: normal;
+	text-decoration: none;
+	text-align: center;
+	text-wrap: normal;
+	color: black;
+	margin: 10px 50px 0 50px;
+	max-width: 1000px;
+	background-color: #ebebeb;
+}
+h1{
+	font-size: 1.80571428571429em;
+	color: #C90739;
+	text-align: center;	
+	max-width: 1000px;
+}
+h2{
+	font-size: 1.71428571428571em;
+	color: #0A75C7;
+	text-align: center;
+}
+h3 {
+	font-family: Lato, Arial, sans-serif;
+	font-weight: 200;
+	color: black;
+	text-align: center;
+	font-size: 1.11428571428571em;
+}
+p, h4, h5, h6{
+	padding: 10px;
+	color: black;
+	max-width: 900px;
+	font-size: .91428571428571em;
+	text-align: center;
+}
+
+/* -----------------------------------------
+  header styles
+----------------------------------------- */
+
+/* -----------------------------------------
+  projects page modal
+----------------------------------------- */
+#overlay {
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.3);
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 1000;
+	display:none;
+	}
+#modal {
+	width: 450px;
+	background: #CCC;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -200px;
+	z-index: 1001;
+	display: none;
+}
+#modal .header {
+	background: #333;
+	color: #FFF;
+	padding: 10px;
+	
+	}
+#modal p{
+	margin: 15px;
+	}
+#modal .close{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px 10px;
+	border: 1px solid #cccccc;
+	background-color: #ff0000;
+	}
+.modalClick {
+	float: left;
+	}
+form{
+	padding: 15px;
+	text-align: left;
+	}
+
+header {
+	width: 960px;
+}
+.userid{
+	width: 100px;
+	float: left;
+	font-weight: bold;
+	}	
+.logoutbox{
+	width: 400px;
+	float: right;
+	}
+.mystatus > input[type=radio]{
+	display: none;
+	}
+input[type=radio] + img{
+	cursor: pointer;
+	border: 2px solid transparent;
+	}
+input[type=radio] .checked + img{
+	border: 2px solid #ff0000;
+	}
+.projects {
+	text-align:left;
+	background-color: white;
+	
+	}
+#sortable {
+		background-color: white;
+	
+	}
+	/* -----------------------------------------
+  login
+----------------------------------------- */
+.tooltip {
+	
+	position: absolute;
+	border: 1px solid rgb(51, 51, 51);
+	background-color: #000000;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	font-size: 12px Arial;
+	}
+	
+/* -----------------------------------------
+  Tabs
+----------------------------------------- */
+#tabs {
+	background-color: #0A75C7;
+	height: 100px;
+	padding: 20px;
+    text-align: center;
+	}
+#tabs p{
+	color: white;
+	}
+#tabs-nav {
+	padding: 20px;
+	background-color: #0A75C7;
+	text-decoration: none;
+	list-style-type: none;
+	}
+#tabs-nav li{
+    display: inline;
+}
+
+/* -----------------------------------------
+  Tabs
+----------------------------------------- */
+footer {
+
+	margin: 100 0 0 0;
+	clear: both;
+	padding: 0;
+}
+footer p {
+	font-size: 10px;	
+	text-decoration:none;
+	margin: 0;
+}
+#pageFooter {
+	text-align: center;
+	font-size: 10px;	
+}
+#pageFooter a{
+	text-decoration:none;
+	color: black;
+}
+#pageFooter a:hover {
+	color: #C90739;	
+}
+.bottom {
+	padding: 30;
+	border-top:solid 8px black;
+}
+/* -----------------------------------------
+Poor Man's Reset
+CSSresetr.com
+-----------------------------------------*/
+html, body {
+	padding: 0;
+	margin: 0;
+	}
+html {
+	font-size: 1em;
+	}
+body {
+	font-size: 100%;
+	}
+a img, :link img, :visited img {
+	border: 0;
+	}
