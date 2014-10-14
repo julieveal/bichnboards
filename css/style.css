@@ -43,7 +43,10 @@ p, h4, h5, h6{
 /* -----------------------------------------
   header styles
 ----------------------------------------- */
-#box {
+#fixed {
+	position:fixed;
+	z-index: 1004;
+}#box {
 	background-color: black;
 	width: 100%;
 	height: 125px;
@@ -107,9 +110,9 @@ navTop p{
 	color: white;
 }
 #learnMore {
-	position: absolute;
-	top:0;
+	position: absolute;top:0;
 	right:0;
+
 	background-color: #B2B2B2;
 }
 #hmMiddle {
