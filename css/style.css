@@ -43,9 +43,8 @@ p, h4, h5, h6{
 /* -----------------------------------------
   header styles
 ----------------------------------------- */
-#fixed {
+header #fixed {
 	position:fixed;
-	z-index: 1004;
 }#box {
 	background-color: black;
 	width: 100%;
@@ -88,11 +87,10 @@ navTop p{
 	left:0;
 	background-color:#CCC;
 	opacity: 0.6;
-	text-align:left;
-	width: 960px;
-	font-weight:bold;
-	color: white;
+	width: 960px;	
+	text-shadow: 0 1px 0 white;
 }
+
 #featureBox {
 	position:relative;
 	clear: both;
