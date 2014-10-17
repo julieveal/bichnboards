@@ -158,10 +158,36 @@ navTop p{
   login page
 ----------------------------------------- */
 #center {
-	text-align:center;
+	text-align:center;	
 }
 .orange {
 	color: orange;
+}
+
+.imageContainer {
+	width: 960px;
+	height: 700px;
+	position: relative;
+	bottom:0;
+
+}
+.big {
+	width:100%;
+	overflow:hidden;
+	
+}
+.boxoverlay {
+	width: 450px;
+	background: #FAFAFA;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -233px;
+	padding-bottom: 25px;
 }
 /* -----------------------------------------
   projects page modal
@@ -173,7 +199,7 @@ navTop p{
 	position: absolute;
 	top: 0;
 	left:0;
-	z-index: 1000;
+	z-index: 1008;
 	display:none;
 	}
 #modal {
@@ -283,7 +309,9 @@ a img, :link img, :visited img {
 /* -----------------------------------------
 Buttons
 -----------------------------------------*/
-
+#signinButton {
+	magin-bottom: 25px;
+}
 /* -----------------------------------------
 footer
 -----------------------------------------*/
@@ -291,8 +319,10 @@ footer
 	width: 960px;
 	height: 225px;
 	background-color: #F4F4F4;
-	margin: 0px 25px 0 0;
+	margin: 
+	0px 0 0 0;
 	text-align: center;
+	position: relative;
 	clear:both;
 }
 #footerSide {
