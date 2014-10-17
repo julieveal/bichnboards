@@ -4,20 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//use.typekit.net/yye2ptm.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+
+	
+    <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
   </head>
   <header id="fixed">
   		<section id="box">
@@ -25,12 +20,13 @@
 			<navTop>
         	<p>Login     |     Register     |     MySurf Rack     </p>
             </navTop>        	
-            <div id="searchSide">            	
+            <div id="searchSide" <input type="text" placeholder="Search..." required>
+                <input type="button" value="Search">
             </div>
         </section>        
   </header>
-  <body>
-    <h1>Welcome to bichnboards</h1>
+  <body id="center">
+    <h1 class="orange">Welcome to bichnboards</h1>
 <div id="login">
 	<div id="loginForm"><br><br>
 		<label>Username: </label><label for="user"></label><input name="signinButton" type="text" id="user" class="masterTooltip" title="Please enter a Username" required />
@@ -42,10 +38,35 @@
 	</div>
     <div id="cta">
 	<h1>Sign Up Now!</h1>
-		<h3> Bich-N-Boards is an online application that allows you to search and purchase designs for your surfboard. 
-		</h3>
+		<p> Bich-N-Boards is an online application that allows you to search and purchase designs for your surfboard. 
+		</p>
 		<input name="regButton" type="button" id="regButton" value="Sign Up" class="masterTooltip" title="Join Today! It's Free!" />
 	</div>
+    <br>
+<footer>
+	<section id="footerBox">   	
+        <article id="footerSide">
+        	<ul><img src="images/logo_black.png">
+            	<li>Overview</li>
+				<li>Art</li>
+                <li>Videos</li>
+                <li>News</li>
+            </ul>
+        </article>
+        <article>
+        <article><hr>
+        	<nav>
+            <ul>
+        		<li>©2014 bichnboards    |</li>
+                <li>Privacy Policy     |</li>
+                <li>Terms of Use     |</li>
+                <li>Contact     |</li>
+                <li>About Us</li>
+            </ul>
+            </nav>
+        </article>
+    </section>
+</footer>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

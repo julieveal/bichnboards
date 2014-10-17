@@ -2,7 +2,7 @@
    Global resets
 ----------------------------------------- */
 body {
-	font-family: Lato, Arial, sans-serif;
+	
 	font-size: .91428571428571em;
 	font-weight: 500;
 	font-style: normal;
@@ -14,7 +14,7 @@ body {
 	background-color: #ffffff;
 }
 h1{
-	font-family: "tablet-gothic-compressed",sans-serif;
+	font-family: BebasNeue.otf;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 1.80571428571429em;
@@ -22,18 +22,20 @@ h1{
 	max-width: 1000px;
 	padding-left: 10px;
 }
-h2{
+h2{ 
+	font: BebasNeue.otf;
 	font-size: 1.71428571428571em;
 	color: black;
 }
 h3 {
-	font-family: "tablet-gothic-compressed",sans-serif;
+	font: BebasNeue.otf;
 font-style: normal;
 font-weight: 800;
 	color: black;
 	font-size: 1.11428571428571em;
 }
 p, h4, h5, h6{
+	font-family: Lato, Arial, sans-serif;
 	padding-left: 10px;
 	color: black;
 	max-width: 900px;
@@ -67,13 +69,13 @@ navTop p{
 	padding:0;
 }
 #searchSide {
-	background-color: #999;
 	width: 220px;
 	height: 30px;
 	font-size:12px;
 	position:absolute;
 	right:0;
 }
+
 /* -----------------------------------------
   home page articles
 ----------------------------------------- */
@@ -152,7 +154,15 @@ navTop p{
 	background-image:url(../images/sale.jpg);
 	padding-top:50px;
 }
-
+/* -----------------------------------------
+  login page
+----------------------------------------- */
+#center {
+	text-align:center;
+}
+.orange {
+	color: orange;
+}
 /* -----------------------------------------
   projects page modal
 ----------------------------------------- */
@@ -283,10 +293,11 @@ footer
 	background-color: #F4F4F4;
 	margin: 0px 25px 0 0;
 	text-align: center;
+	clear:both;
 }
 #footerSide {
 	padding: 10px 0 0 0;
-	font-size:12px;
+	font-size:10px;
 	text-align:left;
 	line-height: 2em;
 }
