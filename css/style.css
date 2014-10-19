@@ -275,6 +275,126 @@ input[type=radio] .checked + img{
 	
 	}
 	/* -----------------------------------------
+  artists page
+----------------------------------------- */
+
+#Containernav {
+	background-image:url(../images/swoosh.jpg);
+	background-repeat:no-repeat;
+}
+#Containernav ul li {
+	display: inline;
+	align:left;
+	font-size: 16px;
+	font: BebasNeue.otf;
+}
+#artMiddle {
+	width: 960px;
+	height: 275px;
+	background-color: none;
+	left: 0;
+	position: relative;
+	padding-top:50px;
+}
+#artMiddle h3 {
+	text-align: center;	
+	padding-top: 85px;
+}
+#artboxOne {
+	float: left;
+	width: 200px;
+	height: 150px;
+	left: 130px;
+	background-image:url(../images/...);
+	position: absolute;
+	padding-top: 50px;
+	padding-bottom:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxTwo {
+	width: 200px;
+	height: 150px;
+	left: 380px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxThree {
+	width: 200px;
+	height: 150px;
+	left: 630px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxFour {
+	float: left;
+	width: 200px;
+	height: 150px;
+	left: 130px;
+	background-image:url(../images/...);
+	position: absolute;
+	padding-top: 50px;
+	padding-bottom:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxFive {
+	width: 200px;
+	height: 150px;
+	left: 380px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxSix {
+	width: 200px;
+	height: 150px;
+	left: 630px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxSeven {
+	float: left;
+	width: 200px;
+	height: 150px;
+	left: 130px;
+	background-image:url(../images/...);
+	position: absolute;
+	padding-top: 50px;
+	padding-bottom:50px;
+	border: 1px solid black;
+	background: white;
+}
+#artboxEight {
+	width: 200px;
+	height: 150px;
+	left: 380px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+}
+#artboxNine {
+	width: 200px;
+	height: 150px;
+	left: 630px;
+	position: absolute;
+	background-image:url(../images/...);
+	padding-top:50px;
+	border: 1px solid black;
+	background: white;
+}
+	/* -----------------------------------------
   login
 ----------------------------------------- */
 .tooltip {

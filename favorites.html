@@ -4,20 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//use.typekit.net/yye2ptm.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+
+	
+    <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
   </head>
   <header id="fixed">
   		<section id="box">
@@ -30,7 +25,76 @@
         </section>        
   </header>
   <body>
-    <h1>These are My Favorite Bich-N-Board Designs</h1>
+  <section id="Containernav">
+    <article>
+        <ul>
+        		<li>HOME </li>
+                <li>OVERVIEW</li>
+                <li>ARTISTS</li>
+                <li>VIDEOS</li>
+                <li>DESIGN</li>
+                <li>TRENDING</li>
+                <li>UPLOAD</li>
+                <li>SALE</li>
+            </ul>
+   	</article>           
+	<article>
+    	<div class="welcome">	
+		</div>
+		<div id="projectlist" align="center">
+			<h1 class="orange">MySurf Rack</h1><h3>These are My Favorite Bich-N-Board Designs</h3><br>
+        	<p><button class="modalClick">Add Another Favorite</button>Drag favorites to the preferred order.</p><br>
+		</div>                
+   	</article>
+     <article id="projectsContainer" class="projects" id="sortable">   
+    </article>
+
+<!--Add Project Modal-->	
+
+<div id="overlay">
+	<div id="modal">
+		<span class="close">X</span>
+	<h3 class="header">Add Artist</h3>
+
+	<div id="add">
+		<form id="addForm">
+			<label>Name:</label>
+            <label for="projectName"></label><input name="projectName" type="text" id="projectName" />
+			<br>
+			<label>Description: </label>
+            <label for="projectDescription"></label><input name="projectDescription" type="text" id="projectDescription" />
+			<br>					
+			<label>Date: </label>
+            <label for="projectDueDate"></label><input name="projectDueDate" type="text" id="projectDueDate" class="mydatepicker"/>
+			<br><br>	
+			<div id="status">Select status:</div>
+			
+			<label class="myStatus">
+			<input type="radio" name="status" id="urgent">
+			<img src="images/urgent.jpg" width="69" height="75">
+			</label>
+			<label class="myStatus">
+			<input type="radio" name="status" id="normal">
+			<img src="images/on-time.jpg" width="69" height="75">
+			</label>
+			<label class="myStatus">
+			<input type="radio" name="status" id="delayed">
+			<img src="images/delayed.jpg" width="69" height="75">
+			</label>
+			<label class="myStatus">
+			<input type="radio" name="status" id="complete">
+			<img src="images/done.jpg" width="69" height="75">
+			</label>
+			<br>
+            </div>
+			<input type="button" name="addButton" id="addButton" value="Add"/>
+		</form> 
+</div>
+ </div>
+</div>
+<div>
+    </article>    
+ </section>   
     
 <footer>
 	<section id="footerBox">   	
@@ -56,6 +120,9 @@
         </article>
     </section>
 </footer>  
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
