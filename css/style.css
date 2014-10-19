@@ -162,6 +162,7 @@ navTop p{
 }
 .orange {
 	color: orange;
+	text-align: center;
 }
 
 .imageContainer {
@@ -190,7 +191,7 @@ navTop p{
 	padding-bottom: 25px;
 }
 /* -----------------------------------------
-  projects page modal
+  favorites page and modal
 ----------------------------------------- */
 #overlay {
 	width: 100%;
@@ -265,6 +266,17 @@ input[type=radio] + img{
 input[type=radio] .checked + img{
 	border: 2px solid #ff0000;
 	}
+.projectsContainer {
+	width: 455px;
+	border: 1px solid black;
+	box-shadow: 3px;
+	background-color: red;
+	align: center;
+	height: 700px;
+	clear:both;
+	margin: 50px auto 50px auto;
+	position:relative;
+}
 .projects {
 	text-align:left;
 	background-color: white;
