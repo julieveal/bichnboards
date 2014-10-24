@@ -21,21 +21,31 @@
         	<p>Login     |     Register     |     MySurf Rack     </p>
             </navTop>        	
             <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search">
+                <input type="button" value="Search"id="searchButton">
+            </div>
+            <div id="advSearch">
+            <p>Advanced Search</p>
             </div>
         </section>        
   </header>
-  <body id="center">
-    <h1>Search For Your Bich-N-Board Design</h1>
-<div id="login">
-	<div id="searchForm"><br><br>
-		<label>Search: </label><label for="user"></label><input name="signinButton" type="text" id="user" class="masterTooltip" title="Please enter a type of board." required />
-	
-		
-		<br><br>	
-		<input name="searchButton" type="button" id="signinButton" value="Search" class="masterTooltip" title="Search" /><br><br>
-		</div>
-	</div>
+
+  <body>
+  	<section class="imageContainer">
+  		<img src="images/featured_big.jpg" class="big">
+  		<article class="searchOverlay">    		
+            	<h1  class="orange">Advanced Search</h1>
+                <br><br><br>
+                	<p id="searchNav">Artists&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;Designs&nbsp;&nbsp;&nbsp;&nbsp;Trending&nbsp;&nbsp;&nbsp;&nbsp;
+                		Color&nbsp;&nbsp;&nbsp;&nbsp;Sale&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                	<label id="searchLabel">Search:&nbsp;&nbsp;</label><label for="user"></label><input class="wideSearch" name="wideSearch" 
+            			type="text" id="wideSearch" class="masterTooltip" title="Please search here." required />
+					<br><br><br>	
+					<input name="searchButton" type="button" id="advSearchBtn" value="Search" class="masterTooltip" title="Advanced Search" />
+            		</p>
+            		<br>
+            	</div>
+		</article>
+	</section>
     
 <footer>
 	<section id="footerBox">   	

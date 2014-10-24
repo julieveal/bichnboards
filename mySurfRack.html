@@ -15,20 +15,21 @@
 
   </head>
   <header id="fixed">
-  		<section id="box">
+  	<section id="box">
         	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
 			<navTop>
         	<p>Login     |     Register     |     MySurf Rack     </p>
             </navTop>        	
-            <div id="searchSide">            	
+            <div id="searchSide" <input type="text" placeholder="Search..." required>
+                <input type="button" value="Search"id="searchButton">               
             </div>
-        </section>        
-  </header>
-  <body>
-  <section id="Containernav">
-    <article>
-        <ul>
-        		<li>HOME </li>
+            <div id="advSearch">
+            <p>Advanced Search</p>
+            </div>
+    </section>
+    <section>
+        <article id="containerNav">
+        	<ul><li>HOME</li>
                 <li>OVERVIEW</li>
                 <li>ARTISTS</li>
                 <li>VIDEOS</li>
@@ -36,11 +37,15 @@
                 <li>TRENDING</li>
                 <li>UPLOAD</li>
                 <li>SALE</li>
-            </ul>
-   	</article>           
+        	</ul>
+   		</article>
+    </section>          
+  </header>
+
+  <body>
+<section class="imageContainer">
+  		<img src="images/featured_big.jpg" class="big">              
 	<article>
-    	<div class="welcome">	
-		</div>
 		<div id="projectlist" align="center">
 			<h1 class="orange">MySurf Rack</h1><h3>These are My Favorite Bich-N-Board Designs</h3><br>
         	<p><button class="modalClick">Add Another Favorite</button>Drag favorites to the preferred order.</p><br>
@@ -48,7 +53,7 @@
    	</article>
      <article id="projectsContainer" class="projects" id="sortable">   
     </article>
-
+</section>
 <!--Add Project Modal-->	
 
 <div id="overlay">
