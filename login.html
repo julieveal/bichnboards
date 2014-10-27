@@ -4,53 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
     <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  		<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search"id="searchButton">
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-        </section>        
-  </header>
-
-
-  <body id="center">
-  	<div class="imageContainer">
-  		<img src="images/featured_big.jpg" class="big">
-  		<div class="boxoverlay">
-    		<h1 style="color:#ff5400">Welcome to bichnboards</h1>
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="login.html">Login</a> | <a href="register.html"> Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input type="button" value="Search" id="searchButton"> 
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
+  <body>
+  <article class="imageContainer"><img src="images/featured_big.jpg" >
+  		<section class="boxoverlay">
+    		<h1 class="searchtext" style="color:#ff5400">Welcome</h1>
 			<div id="login">
 			<div id="loginForm"><br>
 			<label>Username:&nbsp;&nbsp;</label><label for="user"></label><input name="signinButton" type="text" id="user" class="masterTooltip" title="Please enter a Username" required />
 		<br>
 		<label>Password:&nbsp;&nbsp;</label><label for="pass"></label><input name="signinButton" type="password" id="pass" class="masterTooltip" title="Please enter a Password" required/>
 		<br><br>	
-		<input name="signinButton" type="button" id="signinButton" value="Sign In" class="masterTooltip" title="Sign in here!" /><br><br>
+		<input name="signinButton" type="button" id="signinButton" value="Login" class="masterTooltip" title="Login here!" a href="artists.html"/><br>
 		</div>
 	</div>
     <div id="cta">
 	<h1>Sign Up Now!</h1>
-		<p> Bich-N-Boards is an online application that allows you to search and purchase designs for your surfboard. 
+		<p>Bich-N-Boards is an online application that allows you to search and purchase designs for your surfboard. 
 		</p>
-		<input name="regButton" type="button" id="regButton" value="Sign Up" class="masterTooltip" title="Join Today! It's Free!" /><br>
-	</div>
-    </div>
+		<input name="regButton" type="button" id="regButton" value="Register" class="masterTooltip" title="Join Today! It's Free!" a href="register.html"/><br>
+	</section>
+    </article>
     
 
 
@@ -59,29 +54,31 @@
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="search.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
-        <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards    |</li>
+                <li><a href="index.html">Privacy Policy     |</li>
+                <li><a href="index.html">Terms of Use     |</li>
+                <li><a href="index.html">Contact     |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
-</footer>  
+</footer>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+    <script src="js/bootstrap.min.js"></script>    
+    </body>
 </html>

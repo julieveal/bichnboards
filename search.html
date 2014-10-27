@@ -4,43 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
     <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  		<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search"id="searchButton">
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-        </section>        
-  </header>
-
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="index.html">Logout</a> | <a href="register.html">Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input type="button" value="Search" id="searchButton"> 
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
   <body>
   	<section class="imageContainer">
-  		<img src="images/featured_big.jpg" class="big">
+  		<img src="images/featured_big.jpg">
   		<article class="searchOverlay">    		
-            	<h1  class="orange">Advanced Search</h1>
+            	<h1  class="searchtext">Advanced Search</h1>
                 <br><br><br>
                 	<p id="searchNav">Artists&nbsp;&nbsp;&nbsp;&nbsp;Videos&nbsp;&nbsp;&nbsp;&nbsp;Designs&nbsp;&nbsp;&nbsp;&nbsp;Trending&nbsp;&nbsp;&nbsp;&nbsp;
                 		Color&nbsp;&nbsp;&nbsp;&nbsp;Sale&nbsp;&nbsp;&nbsp;&nbsp;</p>
-                	<label id="searchLabel">Search:&nbsp;&nbsp;</label><label for="user"></label><input class="wideSearch" name="wideSearch" 
+                	<label id="searchLabel">Search:&nbsp;&nbsp;</label><label for="user"></label><input class="wideSearch" name="wideSearch" placeholder="Artists"
             			type="text" id="wideSearch" class="masterTooltip" title="Please search here." required />
-					<br><br><br>	
-					<input name="searchButton" type="button" id="advSearchBtn" value="Search" class="masterTooltip" title="Advanced Search" />
+					<br><br>	
+					<input name="advSearchBtn" type="button" id="advSearchBtn" value="Search" class="masterTooltip" title="Advanced Search">
             		</p>
             		<br>
             	</div>
@@ -51,30 +48,31 @@
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="search.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
-        <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards    |</li>
+                <li><a href="index.html">Privacy Policy     |</li>
+                <li><a href="index.html">Terms of Use     |</li>
+                <li><a href="index.html">Contact     |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
-</footer>  
+</footer>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-    
+    <script src="js/bootstrap.min.js"></script>    
+    </body>
 </html>

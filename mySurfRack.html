@@ -4,64 +4,58 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
     <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  	<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search"id="searchButton">               
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-    </section>
-    <section>
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="index.html">Logout</a> | <a href="register.html">Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input type="button" value="Search" id="searchButton"> 
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
+<body>
+<section>
         <article id="containerNav">
-        	<ul><li>HOME</li>
-                <li>OVERVIEW</li>
-                <li>ARTISTS</li>
-                <li>VIDEOS</li>
-                <li>DESIGN</li>
-                <li>TRENDING</li>
-                <li>UPLOAD</li>
-                <li>SALE</li>
+        	<ul><li><a href="artists.html">ARTISTS</li>
+                <li><a href="search.html">VIDEOS</li>
+                <li><a href="artists.html">DESIGNS</li>
+                <li><a href="artists.html">TRENDING</li>
         	</ul>
    		</article>
-    </section>          
-  </header>
-
-  <body>
-<section class="imageContainer">
-  		<img src="images/featured_big.jpg" class="big">              
-	<article>
-		<div id="projectlist" align="center">
-			<h1 class="orange">MySurf Rack</h1><h3>These are My Favorite Bich-N-Board Designs</h3><br>
-        	<p><button class="modalClick">Add Another Favorite</button>Drag favorites to the preferred order.</p><br>
-		</div>                
-   	</article>
-     <article id="projectsContainer" class="projects" id="sortable">   
-    </article>
 </section>
-<!--Add Project Modal-->	
+<section class="imageContainer">
+	<img src="images/psychodelic.jpg"> 
+	<section id="mySurfContainer">
+		<article class="racktext">			
+				<h1>MySurf Rack</h1>
+                <h3>These are My Favorite Bich-N-Board Designs</h3>
+                <br>
+        		<p>Drag favorites to the preferred order.</p>
+                <button class="modalClick">Add Another Favorite</button>
+                <br>                
+   		</article>
+     	<article id="projectsContainer" class="projects" id="sortable">   
+    	</article>
+	</section>
 
-<div id="overlay">
-	<div id="modal">
-		<span class="close">X</span>
-	<h3 class="header">Add Artist</h3>
-
-	<div id="add">
+	<section id="overlay">
+		<div id="modal">
+			<span class="close">X</span>
+			<h3 class="header">Add Artist</h3>
+		<div id="add">
 		<form id="addForm">
 			<label>Name:</label>
             <label for="projectName"></label><input name="projectName" type="text" id="projectName" />
@@ -94,44 +88,40 @@
             </div>
 			<input type="button" name="addButton" id="addButton" value="Add"/>
 		</form> 
-</div>
- </div>
-</div>
-<div>
-    </article>    
+		</div>
+ 		</div>
+	</section>    
  </section>   
-    
+
 <footer>
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="search.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
-        <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards    |</li>
+                <li><a href="index.html">Privacy Policy     |</li>
+                <li><a href="index.html">Terms of Use     |</li>
+                <li><a href="index.html">Contact     |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
-</footer>  
+</footer>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-    
+    <script src="js/bootstrap.min.js"></script>    
+    </body>
 </html>

@@ -4,52 +4,51 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  		<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search" id="searchButton">
-                
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-        </section>        
-  </header>
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="login.html">Login</a> | <a href="register.html"> Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input name="searchButton" type="button" id="searchButton" value="Search" class="masterTooltip" title="Search here!" />
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
 <body>
+<section class="imageContainer">
 <section>
     <article id="outer">
     	<img src="images/featured.jpg">
 		<article id="first">
     	<h1 style="text-align:left">“Think in colour.” Hillary</h1>
-        <p>Born and raised in southern California, I grew up surrounded by surf culture. Turning white 		surfboards into colorful, energy filled canvases has become my passion.</p>
+        <p class="hide-for-small">Born and raised in southern California, I grew up surrounded by surf culture. Turning white surfboards into colorful, energy filled canvases has become my passion.</p>
     	</article>
     </article>
 
     <article id="featureBox">
     	<article id="inFeaturedBox">
         <h1 style="text-align:left">FEATURED ARTIST: Hillary Dunks</h1>
-        <p>Graffiti street art has been a big inspiration for many of my designs, as well as elements found in our natural world. I have had the opportunity to paint several boards for pro surfer Lakey Peterson, including the "Pray for Daisy" series ridden at the 2012 Nike US Open of Surfing in Huntington Beach, Ca.
-		</p>            <input type="button" name="learnMore" id="learnMore" value="Learn More"/>
+        <p class="hide-for-small">Graffiti street art has been a big inspiration for many of my designs, as well as elements found in our natural world. I have had the opportunity to paint several boards for pro surfer Lakey Peterson, including the "Pray for Daisy" series ridden at the 2012 Nike US Open of Surfing in Huntington Beach, Ca.
+		</p>            
+        <input type="button" name="learnMorebtn" id="learnMorebtn" value="Learn More" />
 
     	</article>
     </article>
 </section>    
 
 <section>
- 	<article id="hmMiddle">
+ 	<article id="hmMiddle" class="show-for-small">
     	<article id="boxOne">
         <h3>NEW ARRIVALS</h3>
         </article>
@@ -61,34 +60,37 @@
         </article>
     </article>
  </section>
-
+</section>
 <footer>
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="index.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
         <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards |</li>
+                <li><a href="index.html">Privacy Policy |</li>
+                <li><a href="index.html">Terms of Use |</li>
+                <li><a href="index.html">Contact |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
-</footer>  
+</footer>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    </body>
+    <script src="js/bootstrap.min.js"></script>    
+</body>
 </html>

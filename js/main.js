@@ -1,5 +1,4 @@
 /*  
-	TimeLaps App
 	Author: Julie Veal
 */
 
@@ -24,7 +23,7 @@ $('#signinButton').click(function(){
 			if (response.error) {
 				alert(response.error);
 				}else{
-					window.location.assign('dashboard.html')
+					window.location.assign('artists.html')
 				};
 			}
 	});
@@ -63,23 +62,27 @@ $('#register').on('click', function(){
 				if (response.error){
 					alert(response.error);
 				}else{
-					window.location.assign('dashboard.html');
+					window.location.assign('artists.html');
 					}
 			}
 		});
 	});
 /*===================== dynamic buttons=====================*/		
-	$('.meetsbtn').on('click', function(e) {
+	$('#learnMorebtn').on('click', function(e) {
 		e.preventDefault();
-		window.location.assign('projects.html');
+		window.location.assign('artists.html');
 	});
-	$('.timesbtn').on('click', function(e) {
+	$('#searchButton').on('click', function(e) {
 		e.preventDefault();
-		window.location.assign('times.html');
+		window.location.assign('search.html');
 	});
-	$('.swimmersbtn').on('click', function(e) {
+	$('#advSearchBtn').on('click', function(e) {
 		e.preventDefault();
-		window.location.assign('swimmers.html');
+		window.location.assign('search.html');
+	});
+	$('#regButton').on('click', function(e) {
+		e.preventDefault();
+		window.location.assign('register.html');
 	});
 	$('.dashboard').on('click', function(e) {
 		e.preventDefault();
@@ -88,14 +91,6 @@ $('#register').on('click', function(){
 	$('#regButton').on('click', function(e) {
 		e.preventDefault();
 		window.location.assign('register.html');
-	});
-	$('#cancelButton').on('click', function(e) {
-		e.preventDefault();
-		window.location.assign('index.html');
-	});
-	$('terms').on('click', function(e) {
-		e.preventDefault();
-		window.location.assign('terms.html');
 	});
 	$('#backToRegister').on('click', function(e) {
 		e.preventDefault();

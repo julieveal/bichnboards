@@ -4,93 +4,85 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//use.typekit.net/yye2ptm.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+    <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  		<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search" id="searchButton">
-                
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-        </section>        
-  </header>
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="index.html">Logout</a> | <a href="register.html">Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input type="button" value="Search" id="searchButton"> 
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
 <body>
-  <body id="center">
-  	<div class="imageContainer">
-  		<img src="images/featured_big.jpg" class="big">
-  		<div class="boxoverlay">
-    		<h1 class="orange">Register Here</h1>
-		<label for="first-name">First Name</label><br>
-		<input id="first" type="text" name="first-name" placeholder="Enter your firstname" class="masterTooltip" title="Please enter a firstname"/><br><br>
+<article class="imageContainer"><img src="images/featured_big.jpg" >
+  		<section class="regOverlay">
+    		<h1 class="searchtext" style="color:#ff5400">Register Here</h1>
+        <label for="first-name">First Name</label><br>
+		<input id="first-name" type="text" name="first-name" placeholder="Enter your firstname" class="masterTooltip" title="Please enter a first-name"/><br>
 		
         <label for="last-name">Last Name</label><br>
-		<input id="last" type="text" name="last-name" placeholder="Enter your lastname" class="masterTooltip" title="Please enter a last-name"/><br><br>
+		<input id="last" type="text" name="last-name" placeholder="Enter your lastname" class="masterTooltip" title="Please enter a last-name"/><br>
 		
         <label for="email">Email Address</label><br>
-		<input id="email" type="email" name="email" placeholder="Enter your email address" class="masterTooltip" title="Please enter your email address"/><br><br>
+		<input id="email" type="email" name="email" placeholder="Enter your email address" class="masterTooltip" title="Please enter your email address"/><br>
 		
         <label for="confirm">Confirm Address</label><br>
-		<input id="email" type="email" name="confirm" placeholder="Confirm your email" class="masterTooltip" title="Please confirm your email"/><br><br>
+		<input id="email" type="email" name="confirm" placeholder="Confirm your email" class="masterTooltip" title="Please confirm your email"/><br>
 		
         <label for="user-name">User Name</label><br>
-		<input id="userName" type="text" name="user-name" placeholder="Enter your username" class="masterTooltip" title="Please enter a username. It's required." required /><br><br>
+		<input id="userName" type="text" name="user-name" placeholder="Enter your username" class="masterTooltip" title="Please enter a username. It's required." required /><br>
 		
         <label for="password">Password</label><br>
-		<input id="password" type="password" name="password" placeholder="Enter your password" class="masterTooltip" title="Please enter your password. It's required." required /><br><br>
+		<input id="password" type="password" name="password" placeholder="Enter your password" class="masterTooltip" title="Please enter your password. It's required." required /><br>
 		<label for="confirm">Confirm Password</label><br>
-		<input id="password" type="password" name="confirm" placeholder="Confirm your password" class="masterTooltip" title="Please confirm your password. It's required." required /><br><br>
-<input type="button" id="register" value="Register">		
+		<input id="password" type="password" name="confirm" placeholder="Confirm your password" class="masterTooltip" title="Please confirm your password. It's required." required /><br>
+<br><input type="button" id="register" value="Register">		
 	</div>
-
+</div></div>
 
 <footer>
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="search.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
         <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards    |</li>
+                <li><a href="index.html">Privacy Policy     |</li>
+                <li><a href="index.html">Terms of Use     |</li>
+                <li><a href="index.html">Contact     |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
 </footer>  
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-
+    <script src="js/bootstrap.min.js"></script>    
+    </body>
 </html>

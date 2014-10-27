@@ -4,118 +4,112 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
     <script src="../less-1.7.5.min.js"></script>
     <title>bichnboards</title>
-
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
   </head>
   <header id="fixed">
-  		<section id="box">
-        	<img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
-			<navTop>
-        	<p>Login     |     Register     |     MySurf Rack     </p>
-            </navTop>        	
-            <div id="searchSide" <input type="text" placeholder="Search..." required>
-                <input type="button" value="Search" id="searchButton">
-                
-            </div>
-            <div id="advSearch">
-            <p>Advanced Search</p>
-            </div>
-        </section>        
-  </header>
-  
-  
+      <section id="box">
+          <img src="images/logo.png" width="270px" alt="Bich-N-Boards Logo">
+          <article id="navTop">
+              <p class="show-for-small"><a href="index.html">Logout</a> | <a href="register.html">Register</a> | <a href="mysurfrack.html">MySurf Rack</a></p>
+                  </article>
+                  <div class="searchInput">
+                  <input type="text" placeholder="Search..." required  class="hide-for-small">
+                  </div>
+                  <div class="searchSide"><input type="button" value="Search" id="searchButton"> 
+                      </div>
+                      <div id="advSearch">
+                          <p class="hide-for-small"><a href="search.html">Advanced Search</a></p>
+                              </div>
+                              </section>
+                              </header>
 <body>
-<section id="Containernav">
-    <article>
-        <ul>
-        		<li>HOME </li>
-                <li>OVERVIEW</li>
-                <li>ARTISTS</li>
-                <li>VIDEOS</li>
-                <li>DESIGN</li>
-                <li>TRENDING</li>
-                <li>UPLOAD</li>
-                <li>SALE</li>
-            </ul>
-           
-		<article>
-    	<h1 align="center">ARTISTS</h1>        
-    	</article>
-    </article>    
-
+<section class="imageContainer">
 <section>
- 	<article id="artMiddle">
-    	<article id="artboxOne">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxTwo">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxThree">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        <article id="artboxFour">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxFive">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxSix">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        <article id="artboxSeven">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxEight">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-        <article id="artboxNine">
-        <h3>ARTIST</h3>
-        <p>desciption...</p>
-        </article>
-    </article>
- </section>
+        <article id="containerNav">
+        	<ul><li><a href="artists.html">ARTISTS</li>
+                <li><a href="search.html">VIDEOS</li>
+                <li><a href="artists.html">DESIGNS</li>
+                <li><a href="artists.html">TRENDING</li>
+        	</ul>
+   		</article>
+    </section>
+
+
+<section id="artMiddle">
+    	<h1 class="searchtext">ARTISTS</h1><br><br>
+<table id="toptable">
+  <tr>
+    <td id="artboxOne"></td>
+    <td id="artboxTwo"></td>		
+    <td id="artboxThree"></td>
+  </tr>
+  <tr>
+    <td id="colOne"><h3>DAVE L DESIGNS</h3></td>
+    <td id="colTwo"><h3>GEL CLEMMER</h3></td>		
+    <td id="colThree"><h3>SEBO WALKER</h3></td>
+  </tr>
+  <tr>
+    <td id="colOne"><p>As a native Floridian, David “DaveL” Lavernia has always been inspired by his tropical surroundings. His detailed linework is a style which he diligently spent years cultivating focusing on aquatic elements with vibrant colors and fluid compositions. DaveL works with several different mediums including: Acrylic, oil enamel, oil pastel, aerosol and mixed media. His compositions and use of color attracts and emits movement, allowing for a visual narrative to materialize. “Art is a meditative process for me, as is the repetition of line and form.” -source: daveldesigns.com  
+</p></td>
+    <td id="colTwo"><p>“Modern art will be the constant present of the future, which is motivated by the genius of your own, the artist it self. That is the true art of personal inspiration.” Gel Clemmer As an avid snowboarder and surfer my art is inspired by both sports. I do original surf art for logo’s, t-shirt designs, murals, surfboards, snowboards, skateboards, skimboards, canvas and anything else. Paint everything!!!” -source: gelclemmer.com
+</p></td>		
+    <td id="colThree"><p>Sebo Walker is an amateur skateboarder best known for winning the Red Bull Manny Mania Amateur U.S. Championships in 2011. Sebo is a highly talented artist with a focus in grip tape art.</p></td>
+  </tr></table>
+  <table>
+    <tr>
+    <td id="artboxFour"></td>
+    <td id="artboxFive"></td>		
+    <td id="artboxSix"></td>
+  </tr>
+  <tr>
+    <td id="colOne"><h3>ANDY ROSAMARIE</h3></td>
+    <td id="colTwo"><h3>NOAH COOK</h3></td>		
+    <td id="colThree"><h3>LUCAS RODENBERG</h3></td>
+  </tr>
+  <tr>
+    <td id="colOne"><p>"Florida salt water runs through my veins and out my finger tips. My surroundings are constantly inspiring me to portray surreal, emotional, vibrant characters and themes through a brave approach to every color in the spectrum. I love to create whimsical creatures, charging barrels, and sexy pinups. Skimboarding, dancing, skateboarding and recently, gardening here in Venice, Florida provide for endless ideas and canvas’ of all sorts. I love to use Boardstix as well as acrylics on just about anything that’ll take them."</p></td>
+    <td id="colTwo"><p>“I am a lifelong artist and high school student who loves creating art and being around people. I have been making art and drawing ever since I can remember and enjoy all types styles and mediums. I can create art online with graphic design as well as paint. I get most of my inspiration from the ocean and sea life as well as cartoons and graphic designs. I love using boardstix for a wide variety of canvases like, surfboards, skateboards, skis, and the traditional canvas.”</p></td>		
+    <td id="colThree"><p>“Creating art has always been a way to relax for me. Living on the coast inspired me to get into painting the ocean and the beauty it has to offer. While I switch drawing mediums often I always try to keep my art as realistic as possible. I’m constantly looking to find something new and bring to life for others to enjoy. And although I’m just getting started out my hope is to keep creating, finding new opportunities, and have as much fun as I can along the way.”
+</p></td>
+  </tr>
+
+ </table>
+</section>
 
 <footer>
 	<section id="footerBox">   	
         <article id="footerSide">
         	<ul><img src="images/logo_black.png">
-            	<li>Overview</li>
-				<li>Art</li>
-                <li>Videos</li>
-                <li>News</li>
+            	<li><a href="index.html">Overview</li>
+				<li><a href="artists.html">Artists</li>
+                <li><a href="search.html">Videos</li>
+                <li><a href="index.html">News</li>
             </ul>
         </article>
-        <article>
         <article><hr>
         	<nav>
             <ul>
-        		<li>©2014 bichnboards    |</li>
-                <li>Privacy Policy     |</li>
-                <li>Terms of Use     |</li>
-                <li>Contact     |</li>
-                <li>About Us</li>
+        		<li><a href="index.html">©2014 bichnboards    |</li>
+                <li><a href="index.html">Privacy Policy     |</li>
+                <li><a href="index.html">Terms of Use     |</li>
+                <li><a href="index.html">Contact     |</li>
+                <li><a href="index.html">About Us</li>
             </ul>
             </nav>
         </article>
     </section>
-</footer>  
+</footer>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
     </body>
 </html>
+
